@@ -13,7 +13,7 @@ print("\n\nTHE CORRECTED WORD WILL THE CLOSETS WORD WHICH WILL BE MATCHING TO TH
 time.sleep(1)
 
 # this line will change the word you wrote to the corrected closets matching word....
-b = TextBlob(word)
+correct_word = TextBlob(word)
 
 # this line will try to print the corrected word
-print("The text you might be looking for : " + str(b.correct()))
+print("The text you might be looking for : " + str(correct_word.correct()))
