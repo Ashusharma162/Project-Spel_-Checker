@@ -1,11 +1,19 @@
 from textblob import TextBlob
+import time
 
-a = str(input("Enter a sentence : "))
+word = str(input("Enter the word you want to get corrected : "))
 
-# a = "chestmas"  # incorrect spelling
-# print("original text: " + str(a))
+# used to create a delay of 1 ( provided in the parameter ) second
+time.sleep(1)
 
-b = TextBlob(a)
+print("\n\nTHE CORRECTED WORD WILL THE CLOSETS WORD WHICH WILL BE MATCHING TO THE WORD YOU WROTE.....\n THE WORD "
+      "MAY NOT BE THE BEST SUITED FOR THE WORD YOU WERE EXPECTING......... ")
 
-# prints the corrected spelling
-print("corrected text: " + str(b.correct()))
+# used to create a delay of 1 ( provided in the parameter ) second
+time.sleep(1)
+
+# this line will change the word you wrote to the corrected closets matching word....
+b = TextBlob(word)
+
+# this line will try to print the corrected word
+print("The text you might be looking for : " + str(b.correct()))
